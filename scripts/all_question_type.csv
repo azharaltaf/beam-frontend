@@ -1,0 +1,54 @@
+﻿generatorType,questionType,required,disabled,questionOption,terminate,language,title,description,,,keyboardInput,minValue,maxValue,recognitionKey,filters,qKey,aKey,,Note
+page,,,,,,,,,,,,,,,,,,,A page is created. A page does not have any title or description
+section,,,,,,,Section Title,Section Description,,,,,,,,,,,A section is created. A section contains a title and/or description. 
+question,textbox,,,,,,Textbox Question,Textbox Desciption,,,numeric,10.01,19.95,,,,,,A textbox with title and description
+question,textbox,,,,,en,[en] Textbox Question,[en] Textbox Desciption,,,,,,,,,,,"Required is ""TRUE"" by default. If you would want it to be optional, put ""FALSE"""
+,,,,,,zh-TW,[zh-TW] Question Title,[zh-TW] Question Description,,,,,,,,,,,
+question,dropdown,,,,,,Dropdown Title 1,Dropdown Desription 1,,,,,,,,,,,
+,,,,option,,,Option Title 1,,,,,,,,,,,,
+,,,,option,,,Option Title 2,,,,,,,,,,,,
+,,,,option,,,Option Title 3,,,,,,,,,,,,
+question,checkbox,FALSE,,,,,Checkbox Title,Checkbox Description,,,,,,,,,,,
+,,,,option,,en,Option Title 1 en,,,,,,,,,,,,
+,,,,,,zh-TW,Option Title 1 zh-TW,,,,,,,,,,,,
+,,,,,,zh-CN,Option Title 1 zh-CN,,,,,,,,,,,,
+,,,,option,,en,Option Title 2 en,,,,,,,,,,,,
+,,,,,,zh-TW,Option Title 2 zh-TW,,,,,,,,,,,,
+,,,,,,zh-CN,Option Title 2 zh-CN,,,,,,,,,,,,
+section,,,,,,en,[en] Empty Section Title xxxx,[en] Empty Description,,,,,,,,,,,A section without questions.
+,,,,,,zh-TW,[zh-TW] Empty Section Title yyyyy,[zh-TW] Empty Description,,,,,,,,,,,
+,,,,,,zh-CN,[zh-CN] Empty Section Title zzzzz,[zh-CN] Empty Description,,,,,,,,,,,
+section,,,,,,en,Sample English Title,Sample English Desctiption,,,,,,,,,,,
+,,,,,,zh-TW,Sample zh-TW Title,Sample zh-TW Description,,,,,,,,,,,
+question,dropdown,,,,,,Dropdown Title 2,Dropdown Desription 2,,,,,,,,,,,
+,,,,option,,,Option Title 1,,,,,,,,,,,,
+,,,,option,,,Option Title 2,,,,,,,,,,,,
+,,,,option,,,Option Title 3,,,,,,,,,,,,
+question,radio,,,,,,Radio Title,Radio Description,,,,,,,,,,,
+,,,,option,TRUE,en,Option Title 1 en,,,,,,,,,,,,
+,,,,,,zh-TW,Option Title 1 zh-TW,,,,,,,,,,,,
+,,,,,,zh-CN,Option Title 1 zh-CN,,,,,,,,,,,,
+,,,,option,,en,Option Title 2 en,,,,,,,,,,,,
+,,,,,,zh-TW,Option Title 2 zh-TW,,,,,,,,,,,,
+,,,,,,zh-CN,Option Title 2 zh-CN,,,,,,,,,,,,
+section,,,,,,,Section Title 3,Section Description 3,,,,,,,,,,,
+question,dropdown,,,,,,Dropdown Title 2,Dropdown Desription 2,,,,,,,,,,,
+,,,,option,,,Option Title 1,,,,,,,,,,,,
+,,,,option,,,Option Title 2,,,,,,,,,,,,
+,,,,option,,,Option Title 3,,,,,,,,,,,,
+page,,,,,,,,,,,,,,,,,,,
+section,,,,,,,Section Title,Section Description,,,,,,,,,,,
+question,checkbox,FALSE,,,,,Checkbox Title,Checkbox Description,,,,,,,,,,,
+,,,,option,,en,Option Title 1 en,,,,,,,,,,,,
+,,,,,,zh-TW,Option Title 1 zh-TW,,,,,,,,,,,,
+,,,,,,zh-CN,Option Title 1 zh-CN,,,,,,,,,,,,
+,,,,option,,en,Option Title 2 en,,,,,,,,,,,,
+,,,,,,zh-TW,Option Title 2 zh-TW,,,,,,,,,,,,
+,,,,,,zh-CN,Option Title 2 zh-CN,,,,,,,,,,,,
+question,camera,,,,,,Store Image,Please take a photo of the store image.,,,,,,,,,,,camera type is used to capture a picture for the image.
+question,cameraRecognition,,,,,,Product,Please take a photo of the beverage where the full pack and the brand name can be seen clearly.,,,,,,,,,,,"cameraRecognition type is used to image recognition on picture.  A cameraRecognition has to exists on the same page as the textboxRecognition, rawRecognition, rawRecognitionwithFilter. "
+question,textboxRecognition,,,,,,Brand,Record the brand name of the beverage. E.g. Cola-cola,,,,,,logo,"coca-cola, vanilla, chocolate",,,,Logo and text are only supported type for recognitionKey. This is to get the brand or text from the camera recognition. This field is hidden by default and will be showed to user after an image is taken.
+question,textboxRecognition,,,,,,Variant,Record the variant of the beverage. E.g. original/vanilla/chocolate/ 3in1,,,,,,text,,,,,
+question,rawRecognition,,,,,,Brand,,,,,,,,"coca-cola, vanilla, chocolate",,,,"This is to get the ""text"" from the camera recognition. This field is hidden and not required by default and will not be shown to the user. If you want to show it to user, use textboxRecognition"
+question,rawRecognition,,,,,,Variant,,,,,,,,,,,,"This is to get the ""text"" from the camera recognition. This field is hidden and not required by default and will not be shown to the user. If you want to show it to user, use textboxRecognition"
+question,location,,,,,,Location Title 1,Location Title 2,,,,,,,,,,,"Location is disabled by default. If you would want it to be optional, use ""FALSE"""
