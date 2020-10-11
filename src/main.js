@@ -27,10 +27,6 @@ L.Icon.Default.mergeOptions({
 
 // Leaflet Ends
 
-import VueCookies from 'vue-cookies'
-Vue.use(VueCookies)
-VueCookies.config('3h')
-
 library.add(faCoffee)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
